@@ -27,20 +27,21 @@ switch(i) {
 }
 ```
 
-C Preprocessor statements must not be indented unless they are nested.
+C Preprocessor statements must not be indented.
 
 ```C
 #ifndef _HELLOWORLD_H
 #define _HELLOWORLD_H
    void helloWorld();
-   #ifdef ADVHELLOWORLD
+#ifdef ADVHELLOWORLD
    void advHelloWorld();
-   #endif //ADVHELLOWORLD
-#endif //_HELLOWORLD_H`
+#endif //ADVHELLOWORLD
+#endif //_HELLOWORLD_H
+```
 
 There must be (only) one blank line between the three main sections of a function and between
 functions.  These three sections are the variable declarations, the code block, and the single
-return statement.
+`return` statement.
 
 ```C
 int foo(int i) {
