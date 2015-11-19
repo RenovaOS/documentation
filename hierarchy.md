@@ -1,0 +1,50 @@
+hierarchy
+=========
+
+- /
+	- boot/ (not mounted by default unless on same partition)
+		- kernel (-> /bin/kernel/exe)
+		- ramdisk
+		- options
+	- system/
+		- process/
+		- hardware/
+		- bus/
+		- filesystem/
+		- link/
+		- (etc.)
+	- configuration/
+	- program/
+		- kernel/
+			- res/
+			- exe (-> exe-<latest>)
+			- exe-1.0
+			- lib (-> lib-<latest>)
+			- lib-1.0
+		- pkg/
+			- res/
+			- exe (-> exe-<latest>)
+			- exe-1.0
+			- lib (-> lib-<latest>)
+			- lib-1.0
+			- conf
+	- package/
+		- kernel/
+			- dist/
+			- metadata
+			- changelog
+			- makefile (-> makefile-<latest_stable>)
+			- makefile-1.0
+		- pkg/
+			- dist/
+			- metadata
+			- changelog
+			- makefile (-> makefile-<latest_stable>)
+			- makefile-1.0
+	- data/
+		- root/
+			- run/
+				- dmd
+			- tmp/
+	- media/
+	- home/
